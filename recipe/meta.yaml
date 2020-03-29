@@ -27,17 +27,25 @@ requirements:
     - r-htmltools >=0.3
     - r-htmlwidgets
     - r-leaflet >=2.0.1
+    - r-mapdeck
     - r-raster
     - r-sf
     - r-sp
+    - r-base64enc
+    - r-scales >=1.0.0
+    - r-png
   run:
     - r-base
     - r-htmltools >=0.3
     - r-htmlwidgets
     - r-leaflet >=2.0.1
+    - r-mapdeck
     - r-raster
     - r-sf
     - r-sp
+    - r-base64enc
+    - r-scales >=1.0.0
+    - r-png
 
 test:
   commands:
@@ -46,11 +54,16 @@ test:
 about:
   home: https://github.com/r-spatial/leafem
   license: MIT
-  license_file: LICENSE
-  summary: Provides extensions for package 'leaflet', many of which are used  by package 'mapview'. Focus is on functionality readily available in  Geographic Information
-    Systems such as 'Quantum GIS'. Includes functions to display coordinates of mouse pointer position, query image values via  mouse pointer and zoom-to-layer buttons.
-    Additionally, provides a feature  type agnostic function to add points, lines, polygons to a map.
+  summary: Provides extensions for packages 'leaflet' & 'mapdeck', many of which are used by
+    package 'mapview'. Focus is on functionality readily available in Geographic Information
+    Systems such as 'Quantum GIS'. Includes functions to display coordinates of mouse
+    pointer position, query image values via mouse pointer and zoom-to-layer buttons.
+    Additionally, provides a feature type agnostic function to add points, lines, polygons
+    to a map.
   license_family: MIT
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - LICENSE
 
 extra:
   recipe-maintainers:
