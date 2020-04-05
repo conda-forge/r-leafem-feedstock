@@ -1,4 +1,4 @@
-{% set version = '0.0.1' %}
+{% set version = "0.1.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,10 +11,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/leafem_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/leafem/leafem_{{ version }}.tar.gz
-  sha256: 61d05e3cd8a70bf35abf8fb73006f100819c291481c13bb80f0eba283be44b7a
+  sha256: 5c0284fd939af8ddd1eafd0acfc084fa80e56584888a47fc0dc8df4c6b898b03
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   script: R CMD INSTALL --build .
   rpaths:
@@ -47,11 +47,9 @@ about:
   home: https://github.com/r-spatial/leafem
   license: MIT
   license_file: LICENSE
-  summary: Provides extensions for package 'leaflet', many of which are used  by package 'mapview'.
-    Focus is on functionality readily available in  Geographic Information Systems such
-    as 'Quantum GIS'. Includes functions to display coordinates of mouse pointer position,
-    query image values via  mouse pointer and zoom-to-layer buttons. Additionally, provides
-    a feature  type agnostic function to add points, lines, polygons to a map.
+  summary: Provides extensions for package 'leaflet', many of which are used  by package 'mapview'. Focus is on functionality readily available in  Geographic Information
+    Systems such as 'Quantum GIS'. Includes functions to display coordinates of mouse pointer position, query image values via  mouse pointer and zoom-to-layer buttons.
+    Additionally, provides a feature  type agnostic function to add points, lines, polygons to a map.
   license_family: MIT
 
 extra:
