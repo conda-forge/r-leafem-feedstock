@@ -27,17 +27,25 @@ requirements:
     - r-htmltools >=0.3
     - r-htmlwidgets
     - r-leaflet >=2.0.1
+    - r-mapdeck
     - r-raster
     - r-sf
     - r-sp
+    - r-base64enc
+    - r-scales >=1.0.0
+    - r-png
   run:
     - r-base
     - r-htmltools >=0.3
     - r-htmlwidgets
     - r-leaflet >=2.0.1
+    - r-mapdeck
     - r-raster
     - r-sf
     - r-sp
+    - r-base64enc
+    - r-scales >=1.0.0
+    - r-png
 
 test:
   commands:
