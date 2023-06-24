@@ -1,11 +1,11 @@
-About r-leafem
-==============
+About r-leafem-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-leafem-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/r-spatial/leafem
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-leafem-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides extensions for package 'leaflet', many of which are used  by package 'mapview'. Focus is on functionality readily available in  Geographic Information Systems such as 'Quantum GIS'. Includes functions to display coordinates of mouse pointer position, query image values via  mouse pointer and zoom-to-layer buttons. Additionally, provides a feature  type agnostic function to add points, lines, polygons to a map.
 
