@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %} 
+{% set version = "0.2.3" %} 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/leafem_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/leafem/leafem_{{ version }}.tar.gz
-  sha256: 97eb78b3eaf6012940f2c4f73effd8ff2d39aa46fef5f2ddf0005990b07dba8d
+  sha256: defd5baa4383da4182e97d41145c7a9633a987de05c465eb99a7a452fbf375e3
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   script: R CMD INSTALL --build .
   rpaths:
