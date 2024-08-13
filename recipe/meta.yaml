@@ -1,6 +1,5 @@
 {% set version = "0.2.3" %} 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-leafem
@@ -13,7 +12,7 @@ source:
   sha256: defd5baa4383da4182e97d41145c7a9633a987de05c465eb99a7a452fbf375e3
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   script: R CMD INSTALL --build .
   rpaths:
