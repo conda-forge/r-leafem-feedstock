@@ -1,4 +1,4 @@
-{% set version = "0.2.3" %} 
+{% set version = "0.2.4" %} 
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/leafem_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/leafem/leafem_{{ version }}.tar.gz
-  sha256: defd5baa4383da4182e97d41145c7a9633a987de05c465eb99a7a452fbf375e3
+  sha256: 71de423115fd40fa9dcd2a6eb223d76d7924c55611b8a9dc5c0ba87234eac5c5
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   script: R CMD INSTALL --build .
   rpaths:
