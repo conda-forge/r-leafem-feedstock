@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %} 
+{% set version = "0.2.5" %} 
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/leafem_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/leafem/leafem_{{ version }}.tar.gz
-  sha256: 71de423115fd40fa9dcd2a6eb223d76d7924c55611b8a9dc5c0ba87234eac5c5
+  sha256: 6cab254e0c987495b517e550fa22b20128218195a87e98822a7750297f705246
 
 build:
   number: 0
